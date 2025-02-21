@@ -1,7 +1,7 @@
-
+@ApiPets
 Feature: Pets Management
 
-  @AddPets @ApiPets
+  @AddPets
   Scenario Outline: Adding a new pet
     Given the following pets information:
       | id   | category_id   | category_name   | name   | status   |
@@ -16,12 +16,12 @@ Feature: Pets Management
       | 4  | 7           | Bulldog          | Max  | sold      |
 
 
-  @FindPetSoldStatus @ApiPets
+  @FindPetSoldStatus
   Scenario: Find pet by status sold
     When the user searches all the pets by "status" "sold"
     Then the user shows the names of the sold pets
 
-  @ApiPets @CountingPets
+  @CountingPets
   Scenario: Counting pets with the same name
     Given the user has collected all the information on the pets sold
     Then user counts how many pets have the same name

@@ -4,7 +4,8 @@ import org.openqa.selenium.By;
 
 public class SearchResultPage {
 
-    public static final By RESULTS_MAIN_PAGE = By.cssSelector(".react-results--main");
-    public static final By LIST_LINKS = By.cssSelector(".react-results--main li[data-layout='organic'] h2");
+    public static final By RESULTS_MAIN_PAGE = By.id("search");
+    public static final By LIST_LINKS = By.cssSelector("#rso .MjjYud h3");
+
 
 }

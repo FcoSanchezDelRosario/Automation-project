@@ -20,9 +20,8 @@ public class SearchResult extends UIInteractionSteps {
                 .filter(link -> link.getText().equalsIgnoreCase(linkName))
                 .findFirst().orElseThrow();
         new Actions(getDriver()).scrollFromOrigin(
-                WheelInput.ScrollOrigin.fromElement(linkDesired, 0, -50),0,300)
+                WheelInput.ScrollOrigin.fromElement(linkDesired, 0, -50),0,200)
                 .perform();
         linkDesired.click();
     }
-
 }
